@@ -1,0 +1,23 @@
+{
+	"name": "@embedded-js/wifi-connection-manager",
+	"description": "A wifi connection manager for Embedded JS that supports multiple networks and auto-reconnect.",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsup",
+		"ci": "tsc && pnpm run build && biome check && pnpm run check-exports",
+		"format": "biome check --write",
+		"check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+		"prepublishOnly": "pnpm run ci"
+	},
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.17.0",
+		"@biomejs/biome": "1.9.4",
+		"@changesets/cli": "^2.27.9",
+		"@moddable/typings": "^5.2.0",
+		"tsup": "^8.3.5",
+		"type-fest": "^4.27.0",
+		"typescript": "^5.6.3"
+	}
+}

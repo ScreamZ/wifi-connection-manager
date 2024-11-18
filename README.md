@@ -1,7 +1,8 @@
 # Embedded : WiFi connection manager
 
 > [!IMPORTANT]
-> This module is ESM only.
+> This module is ESM only and only available for usage with the Moddable SDK as it uses core dependencies.
+> Learn how to setup an Embedded JavaScript project using [xs-dev](https://xs-dev.js.org/).
 
 A robust solution to manage Wi-Fi connections in embedded systems using the Moddable SDK. `WiFiConnectionManager` simplifies the process of maintaining an active connection to a Wi-Fi access point.
 

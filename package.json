@@ -1,9 +1,19 @@
 {
 	"name": "@embedded-js/wifi-connection-manager",
 	"description": "A wifi connection manager for Embedded JS that supports multiple networks and auto-reconnect.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"main": "dist/index.js",
+	"author": {
+		"name": "Andréas HANSS",
+		"email": "contact@codingspark.io"
+	},
+	"license": "MIT",
+	"keywords": ["wifi", "connection", "manager", "embedded-js", "iot"],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ScreamZ/wifi-connection-manager"
+	},
 	"scripts": {
 		"build": "tsup",
 		"ci": "tsc && pnpm run build && biome check && pnpm run check-exports",

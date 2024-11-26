@@ -41,12 +41,12 @@ const manager = new WiFiConnectionManager(
   ],
   (message) => {
     switch (msg) {
-      case WiFiConnectionManager.gotIP.connected:
+      case WiFiConnectionManager.connected:
         break; // still waiting for IP address
-      case WiFiConnectionManager.gotIP.gotIP:
+      case WiFiConnectionManager.gotIP:
         trace(`IP address ${Net.get("IP")}\n`);
         break;
-      case WiFiConnectionManager.gotIP.disconnected:
+      case WiFiConnectionManager.disconnected:
         break; // connection lost
     }
   }

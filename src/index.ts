@@ -14,7 +14,7 @@ type WiFiMessage =
 	| "station_disconnect";
 
 /**
- * WiFiConnectionManager is designed to be used in place of the "wifi" module in project, that need a continuously available connection to a Wi-Fi access point.
+ * WiFiConnectionManager is designed to be used in place of the "wifi" module in projects that need a continuously available connection to a Wi-Fi access point.
  *
  * - If no connection available at start, retries until one is.
  * - Automatically attempts to reconnect when connection dropped.
@@ -47,6 +47,9 @@ type WiFiMessage =
  *   }
  * );
  * ```
+ *
+ * This code is based on the Wi-Fi Connection example in the Moddable SDK:
+ *     https://github.com/Moddable-OpenSource/moddable/blob/public/examples/network/wifi/wificonnection/wificonnection.js
  */
 export class WiFiConnectionManager extends WiFi {
 	private reconnectTimer?: Timer;
